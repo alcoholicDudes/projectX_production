@@ -2,11 +2,7 @@ const Sequelize = require("sequelize");
 const DB = require("../config.json").DB;
 const datatypes = Sequelize.DataTypes;
 
-const db = new Sequelize(DB.DATABASE, DB.USER, DB.PASSWORD, {
-    host: DB.HOST,
-    dialect: DB.DIALECT,
-    logging: false
-});
+const db = new Sequelize('postgres://ufalduhpcmzzjh:dd75f850ef9f24855d76ff240afc32c6db1feb74c6be573809b0b044d2cba6f6@ec2-23-21-121-220.compute-1.amazonaws.com:5432/dcvo4s5ql5rk6b');
 
 const user = db.define('users', {
     userId: {
