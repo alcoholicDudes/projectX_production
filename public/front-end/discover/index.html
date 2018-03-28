@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/scrollTop.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid" id="header">
+    <a class="float-left text-dark header_link mx-2" href="">sell your artwork</a>
+    <a class="float-right text-dark header_link mx-2" href="">track order</a>
+    <a class="float-right text-dark header_link mx-2" href="">signup/login</a>
+</div>
+<div class="container-fluid d-none d-md-block" id="temp-bar">
+    <div class="hexagon d-none d-md-block"><span></span></div>
+    <img class="d-none d-md-block" id="logo" src="img/k_final.png">
+</div>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top mb-5">
+    <img class="d-block d-md-none" id="logo-after" src="../img/k_final.png">
+    <div class="hexagon-after d-block d-md-none"><span></span></div>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto text-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle bg-dark" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    SHOP
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Men</h4>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=male&designCatagory=2">t-shirts</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=1&sex=male&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=2&sex=male&designCatagory=1">hoodies</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Women</h4>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=0&sex=female&designCatagory=1">t-shirts</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=1&sex=female&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=2&sex=female&designCatagory=1">hoodies</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider "></div>
+                    <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=uni&designCatagory=1">Show for
+                        all</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../tshirt-costomize/index.html">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../about-us-2.0/index.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Collection By Stars</a>
+            </li>
+        </ul>
+        <form class="ml-auto ml-md-0" method="get" action="" id="searchbox5">
+            <input id="search52" name="q" type="text" size="40" placeholder="Search..."/>
+        </form>
+        <ul class="navbar-nav text-right">
+            <li class="nav-item ">
+                <!-- below userId will come from cookies-->
+                <a class="nav-link" href="../profile-viewer/index.html?userId=2"><i class="fas fa-user fa-lg"></i></a>
+            </li>
+            <li id="cart_icon_holder" class="nav-item ">
+                <a class="nav-link" href="../cart/index.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<a class="" href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<div class="container-fluid row" id="filters">
+    <div class="col-12 col-md-3 mt-5 ">
+        <div class="row">
+            <div class="col-4 col-md-12 mt-md-5 ml-md-5 pl-md-5">
+                <fieldset class="form-group" id="catagoryRadio">
+                    <h5 class="">CATEGORIES</h5>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="categories" id="gridRadios1"
+                               value="0" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            T-shirts
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="categories" id="gridRadios2"
+                               value="1">
+                        <label class="form-check-label" for="gridRadios2">
+                            V-Neck
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="categories" id="gridRadios10"
+                               value="2">
+                        <label class="form-check-label" for="gridRadios10">
+                            Hoodies
+                        </label>
+                    </div>
+                    <!--<div class="form-check radio radio-primary">-->
+                        <!--<input class="form-check-input" type="radio" name="categories" id="gridRadios11"-->
+                               <!--value="3">-->
+                        <!--<label class="form-check-label" for="gridRadios11">-->
+                            <!--All-->
+                        <!--</label>-->
+                    <!--</div>-->
+                </fieldset>
+            </div>
+            <div class="col-4 col-md-12 ml-md-5 pl-md-5">
+                <fieldset class="form-group" id="genderRadio">
+                    <h5 class="">GENDER</h5>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="gender" id="gridRadios4"
+                               value="male" checked>
+                        <label class="form-check-label" for="gridRadios4">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="gender" id="gridRadios5"
+                               value="female">
+                        <label class="form-check-label" for="gridRadios5">
+                            Female
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="gender" id="gridRadios6"
+                               value="uni">
+                        <label class="form-check-label" for="gridRadios6">
+                            Unisex
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-4 col-md-12 ml-md-5 pl-md-5">
+                <fieldset class="form-group" id="themeRadio">
+                    <h5 class="">THEMES</h5>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios9"
+                               value="1" checked>
+                        <label class="form-check-label" for="gridRadios9">
+                            Collaborations
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios25"
+                               value="2">
+                        <label class="form-check-label" for="gridRadios25">
+                            Superheroes
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios7"
+                               value="3">
+                        <label class="form-check-label" for="gridRadios7">
+                            Film/TV
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios12"
+                               value="4">
+                        <label class="form-check-label" for="gridRadios12">
+                            Cartoons/Comics
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios13"
+                               value="5">
+                        <label class="form-check-label" for="gridRadios13">
+                            Funny
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios14"
+                               value="6">
+                        <label class="form-check-label" for="gridRadios14">
+                            Music
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios15"
+                               value="7">
+                        <label class="form-check-label" for="gridRadios15">
+                            Sports
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios16"
+                               value="8">
+                        <label class="form-check-label" for="gridRadios16">
+                            Animal
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios17"
+                               value="9">
+                        <label class="form-check-label" for="gridRadios17">
+                            Desi
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios18"
+                               value="10">
+                        <label class="form-check-label" for="gridRadios18">
+                            Girls/Boys Power
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios21"
+                               value="11">
+                        <label class="form-check-label" for="gridRadios21">
+                            Food
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios22"
+                               value="12">
+                        <label class="form-check-label" for="gridRadios22">
+                            Quotes
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios23"
+                               value="13">
+                        <label class="form-check-label" for="gridRadios23">
+                            Gaming/Geek
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios24"
+                               value="14">
+                        <label class="form-check-label" for="gridRadios24">
+                            Abstract
+                        </label>
+                    </div>
+                    <div class="form-check radio radio-primary">
+                        <input class="form-check-input" type="radio" name="themes" id="gridRadios27"
+                               value="15">
+                        <label class="form-check-label" for="gridRadios27">
+                            Other
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-9">
+        <div class="container" id="items">
+            <div class="row my-2">
+                <h1 class="col mt-5" id="searchTitle">Tshirts For Men</h1>
+                <span class="col mt-5 align-self-center text-secondary" id="numItems">0 Items</span>
+            </div>
+            <div class="row mt-2" id="designHolder">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid text-secondary border_top_light" id="footer">
+    <div class="row my-2 mx-md-3 text-center text-md-left">
+        <div class="col-12 col-sm-12 col-md-3 my-2 border_right_light">
+            <h5 class="text-dark">
+                Download App
+            </h5>
+            <a class="m-3 p-0 text-secondary" id="gplay_icon" href=".">
+                <i class="fab fa-google-play fa-3x"></i>
+            </a>
+            <h5 class="m-2 d-inline d-md-block">
+                200+ USERS
+            </h5>
+            <h5 class="m-2 d-inline d-md-block">
+                2000+ STYLES
+            </h5>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 my-2 text-center text-md-left">
+            <h5 class="text-dark d-none d-sm-none d-md-block">COMPANY NAME</h5>
+            <a class="text-secondary d-inline d-md-block m-2 " href=".">Help / Support</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">About Us</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">Careers</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">FAQ's</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">Coupons</a>
+        </div>
+        <div class="col-3 my-2 d-none d-sm-none d-md-block">
+            <h5 class="text-dark">
+                OUR POLICIES
+            </h5>
+            <a class="text-secondary d-block my-2">Terms and Conditions</a>
+        </div>
+        <div class="col-3 d-none d-sm-none d-md-block my-2">
+            <h5 class="text-dark">OUR PROMISE TO YOU</h5>
+
+            <p><i class="fas fa-heart fa-3x"></i> Get 100% satisfied</p>
+        </div>
+    </div>
+    <div class="row border_top_light text-center my-2">
+        <h5 class="col-6 my-5 d-none d-md-inline">
+            <i class="fas fa-rupee-sign fa-3x"></i>
+            CASH ON DELIVERY
+        </h5>
+        <h5 class="col-6 my-5 d-none d-md-inline">
+            <i class="fas fa-truck fa-3x"></i>
+            FREE SHIPPING*
+        </h5>
+    </div>
+    <div class="container border_top_light my-2">
+        <div class="row my-2">
+            <div class=" col-12 col-md-4 text-center text-md-left">
+                <h6 class="h6 text-dark d-none d-md-block">SECURE SHOPPING</h6>
+                <i class="fas fa-lock fa-2x m-2"></i>
+            </div>
+            <div class="col-8 d-none d-md-block">
+                <h6 class="h6 text-dark">PAYMENT OPTIONS</h6>
+                <i class="far fa-credit-card fa-2x m-2"></i>
+                <i class="fas fa-credit-card fa-2x m-2"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center my-2 border_top_light">
+        <p class="text">
+            <small>
+                Copyright © 2018 Company Name. All Rights Reserved
+            </small>
+        </p>
+    </div>
+</div>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+<script src="navbar.js"></script>
+<script src="../navbar/scrollTop.js"></script>
+<script src="cart-animation.js"></script>
+<script src="code.js"></script>
+<script src="../navbar/scrollTop.js"></script>
+<script src="../navbar/navbar.js"></script>
+</body>
+</html>

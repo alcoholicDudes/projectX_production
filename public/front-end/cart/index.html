@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid d-none d-md-block" id="temp-bar">
+    <div class="hexagon d-none d-md-block"><span></span></div>
+    <img class="d-none d-md-block" id="logo" src="img/k_final.png">
+    <h3 class="font-weight-bold mx-3" id="company-name">KELVISH</h3>
+    <h4 class="row justify-content-center d-none d-lg-block" id="some-text">Bag ---- Delivery ---- Payment</h4>
+    <h4 class="row justify-content-center text-secondary mx-3" id="some-text2"><i class="fas fa-lock"></i> 100% SECURE
+    </h4>
+</div>
+<div class="container d-block d-md-none">
+    <p class="display-2 text-center">KELVISH</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <div class="row my-5">
+                <h5 class="col-6">My Shopping Bag (<span class="num-items" id="numItems">1</span> Items)</h5>
+                <h5 class="col-6">
+                    Total: Rs.<span id="cartPrice">0</span>
+                </h5>
+            </div>
+            <div id="itemHolder" class="">
+                <div class="row mb-5 m-1 border-solid rounded items">
+                    <div class="col-12 col-md-3 p-0">
+                        <div class="card">
+                            <a href="." class="products">
+                                <img src="http://via.placeholder.com/200x250" class="card-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row mt-2">
+                            <div class="col-8">
+                                <h5 class="">Design Name</h5>
+                            </div>
+                            <div class="col-4">
+                                <h5>Rs. 300</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="ml-3">
+                                <small>Design by: <a href=".">User1</a></small>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="form-group ml-3">
+                                <label for="size1">Size</label>
+                                <select class="form-control" id="size1">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>XXL</option>
+                                </select>
+                            </div>
+                            <div class="form-group ml-3">
+                                <label for="quantity1">Qty</label>
+                                <select class="form-control" id="quantity1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row border_top_light">
+                            <button class="btn btn-outline-danger ml-3 my-2 remove-btn" onclick="removeItem($(this))">
+                                remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5 m-1 border-solid rounded items">
+                    <div class="col-12 col-md-3 p-0">
+                        <div class="card">
+                            <a href="."> <img src="http://via.placeholder.com/200x250" class="card-img"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row mt-2">
+                            <div class="col-8">
+                                <h5 class="">Design Name</h5>
+                            </div>
+                            <div class="col-4">
+                                <h5>Rs. 300</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="ml-3">
+                                <small>Design by: <a href=".">User1</a></small>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="form-group ml-3">
+                                <label for="size2">Size</label>
+                                <select class="form-control" id="size2">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>XXL</option>
+                                </select>
+                            </div>
+                            <div class="form-group ml-3">
+                                <label for="quantity2">Qty</label>
+                                <select class="form-control" id="quantity2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row border_top_light">
+                            <button class="btn btn-outline-danger ml-3 my-2" onclick="removeItem($(this))">remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5 m-1 border-solid rounded items">
+                    <div class="col-12 col-md-3 p-0">
+                        <div class="card">
+                            <a href="."> <img src="http://via.placeholder.com/200x250" class="card-img"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row mt-2">
+                            <div class="col-8">
+                                <h5 class="">Design Name</h5>
+                            </div>
+                            <div class="col-4">
+                                <h5>Rs. 300</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="ml-3">
+                                <small>Design by: <a href=".">User1</a></small>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="form-group ml-3">
+                                <label for="size3">Size</label>
+                                <select class="form-control" id="size3">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>XXL</option>
+                                </select>
+                            </div>
+                            <div class="form-group ml-3">
+                                <label for="quantity3">Qty</label>
+                                <select class="form-control" id="quantity3">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row border_top_light">
+                            <button class="btn btn-outline-danger ml-3 my-2" onclick="removeItem($(this))">remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-3 p-5 p-md-0">
+            <h6 class="row my-5">OPTIONS</h6>
+            <div class="row">
+                <form class="form-inline my-4">
+                    <div class="form-group mb-2">
+                        <label for="staticEmail2" class="sr-only">Coupons</label>
+                        <input type="text" readonly class="form-control-plaintext h6" id="staticEmail2" value="Coupons">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="inputPassword2" class="sr-only">Coupon</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="Coupon">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary mb-2">Apply</button>
+                </form>
+            </div>
+            <div class="row border_top_light">
+                <h6 class="mt-4">PRICE DETAILS</h6>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    Bag Total
+                </div>
+                <div id="sub_total" class="col-6">
+                    Rs. 600
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    Estimated Tax
+                </div>
+                <div id="tax" class="col-6">
+                    Rs. 10
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    Delivery
+                </div>
+                <div id="delivery" class="col-6">
+                    Rs. 30
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-6 h5">
+                    Order Total
+                </div>
+                <div id="grand_total" class="col-6 h5">
+                    Rs. 640
+                </div>
+            </div>
+            <div class="row my-4">
+                <button class="btn btn-block btn-success">Place Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="" href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<div class="container-fluid text-secondary border_top_light" id="footer">
+    <div class="container my-2">
+        <div class="row my-2">
+            <div class=" col-12 col-md-3 text-center text-md-left">
+                <h6 class="h6 text-dark d-none d-md-block">SECURE SHOPPING</h6>
+                <i class="fas fa-lock fa-2x m-2"></i>
+            </div>
+            <div class="col-7 d-none d-md-block">
+                <h6 class="h6 text-dark">PAYMENT OPTIONS</h6>
+                <i class="far fa-credit-card fa-2x m-2"></i>
+                <i class="fas fa-credit-card fa-2x m-2"></i>
+            </div>
+            <div class="col-2 d-none d-md-block">
+                <a href=".">
+                    <small class="font-weight-bold text-secondary">Need Help? Contact Us</small>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>

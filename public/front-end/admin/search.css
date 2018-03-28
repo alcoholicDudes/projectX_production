@@ -1,0 +1,84 @@
+.search-box {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+.search-box input[type="text"] {
+    -webkit-appearance: none;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease-out 0.5s;
+    transition: all 0.5s ease-out 0.5s;
+    outline: none;
+}
+.search-box input[type="text"]:focus {
+    width: 280px;
+    height: 30px;
+    margin-right: 20px;
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+.search-box input[type="text"]:focus + span::before {
+    height: 14px;
+    margin: -22px 0 0 -15px;
+    -webkit-transition: all 0.2s ease-out 0.5s;
+    transition: all 0.2s ease-out 0.5s;
+}
+.search-box input[type="text"]:focus + span::after {
+    visibility: visible;
+    margin: -22px 0 0 -15px;
+    -webkit-transition: all 0.2s ease-out 0.7s;
+    transition: all 0.2s ease-out 0.7s;
+}
+.search-box span {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+.search-box span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 8px;
+    margin: -4px 0 0 0;
+    background-color: #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.2s ease-out 0.2s;
+    transition: all 0.2s ease-out 0.2s;
+}
+.search-box span::after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 14px;
+    margin: -36px 0 0 5px;
+    background-color: #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}

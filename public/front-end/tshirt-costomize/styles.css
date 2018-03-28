@@ -1,0 +1,75 @@
+.design-area {
+    width: 220px;
+    height: 350px;
+    border: 3px dashed transparent;
+    position: absolute;
+    top: 110px;
+    left: 152px;
+}
+
+#tshirt_block:hover .design-area {
+    border: 3px solid black;
+}
+
+.image {
+    width: 208px;
+    height: 117px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tshirt_block {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+}
+
+#white-btn {
+    background-color: #f5f5eb;
+}
+
+#white-btn:hover {
+    background-color: #e4e4da;
+}
+
+#green-btn {
+    background-color: #34bf33
+}
+
+#cost_div {
+    display: inline;
+}
+
+
+/*outer layout */
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #fcfcfc;
+}
+
+.border_top_light {
+    border-top: 1px solid #dedede;
+}
+
+.border_right_light {
+    border-right: 1px solid #dedede;
+}
+
+.border_light {
+    border: 1px solid #dedede;
+}

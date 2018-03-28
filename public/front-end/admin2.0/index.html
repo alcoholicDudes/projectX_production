@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/scrollTop.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid d-none d-md-block" id="temp-bar">
+    <div class="hexagon d-none d-md-block"><span></span></div>
+    <img class="d-none d-md-block" id="logo" src="../img/k_final.png">
+</div>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top mb-5">
+    <img class="d-block d-md-none" id="logo-after" src="../img/k_final.png">
+    <div class="hexagon-after d-block d-md-none"><span></span></div>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto text-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle bg-dark" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    SHOP
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Men</h4>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=male&designCatagory=2">t-shirts</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=1&sex=male&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=2&sex=male&designCatagory=1">hoodies</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Women</h4>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=0&sex=female&designCatagory=1">t-shirts</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=1&sex=female&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=2&sex=female&designCatagory=1">hoodies</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider "></div>
+                    <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=uni&designCatagory=1">Show for
+                        all</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../tshirt-costomize/index.html">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../about-us-2.0/index.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Collection By Stars</a>
+            </li>
+        </ul>
+        <form class="ml-auto ml-md-0" method="get" action="" id="searchbox5">
+            <input id="search52" name="q" type="text" size="40" placeholder="Search..."/>
+        </form>
+        <ul class="navbar-nav text-right">
+            <li class="nav-item ">
+                <!-- below userId will come from cookies-->
+                <a class="nav-link" href="../profile-viewer/index.html?userId=2"><i class="fas fa-user fa-lg"></i></a>
+            </li>
+            <li id="cart_icon_holder" class="nav-item ">
+                <a class="nav-link" href="../cart/index.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<a class="" href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+<div class="container card-list">
+    <div class="card blue m-3">
+        <div class="title">Total Orders</div>
+        <span class="glyphicon glyphicon-upload"></span>
+        <div class="value">89</div>
+    </div>
+    <div class="card green m-3">
+        <div class="title">Total Sales</div>
+        <span class="glyphicon glyphicon-upload"></span>
+        <div class="value">Rs.5,990</div>
+    </div>
+    <div class="card orange m-3">
+        <div class="title">Total users</div>
+        <span class="glyphicon glyphicon-download"></span>
+        <div class="value">80</div>
+        <form action="./users.html" class="form-group">
+            <input type="submit" value="Show all" class="btn btn-dark btn-block"/>
+        </form>
+    </div>
+    <div class="card red m-3">
+        <div class="title">new messages</div>
+        <span class="glyphicon glyphicon-download"></span>
+        <div class="value">3</div>
+        <!--<button class="btn btn-dark" href="./messages.html">Show</button>-->
+        <form action="./messages.html" class="form-group">
+            <input type="submit" value="Read" class="btn btn-dark btn-block"/>
+        </form>
+    </div>
+
+</div>
+<div class="container projects mb-3">
+    <div class="projects-inner">
+        <header class="projects-header">
+            <div class="title">Recent transactions</div>
+            <div class="count">| 32 checkouts</div>
+            <span class="glyphicon glyphicon-download-alt"></span>
+        </header>
+        <table class="projects-table table">
+            <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>Date</th>
+                <th>UserId</th>
+                <th>Money</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p style="display: inline">Rs.4,670</p>
+                    <span class="status-text status-orange" style="margin: 10px"> In progress</span>
+                    <p>payU</p>
+
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn btn-light m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p style="display: inline">Rs.4,670</p>
+                    <span class="status-text status-red" style="margin: 10px">Cancelled</span>
+                    <p>payU</p>
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p style="display: inline">Rs.4,670</p>
+                    <span class="status-text status-blue" style="margin: 10px">Received</span>
+                    <p>payU</p>
+
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p>Rs.4,670</p>
+                    <p>COD</p>
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p>Rs.4,670</p>
+                    <p>COD</p>
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p>Rs.4,670</p>
+                    <p>COD</p>
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>001</p>
+                </td>
+                <td>
+                    <p>17th Oct, 15</p>
+                </td>
+                <td class="member">
+                    <div class="member-info">
+                        <p>User1</p>
+                    </div>
+                </td>
+                <td>
+                    <p>Rs.4,670</p>
+                    <p>COD</p>
+                </td>
+                <td class="status">
+                    <form class="form" action="#" method="POST">
+                        <select name="options" class="action-box custom-select m-1">
+                            <option>Download design</option>
+                            <option>Mark In Progress</option>
+                            <option>Mark Cancelled</option>
+                            <option>Mark Completed</option>
+                        </select>
+                        <button class="btn m-1">Apply</button>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="../navbar/navbar.js"></script>
+<script src="../navbar/scrollTop.js"></script>
+</body>
+</html>

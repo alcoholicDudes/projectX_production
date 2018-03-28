@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/scrollTop.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid" id="header">
+    <a class="float-left text-dark header_link mx-2" href="">sell your artwork</a>
+    <a class="float-right text-dark header_link mx-2" href="">track order</a>
+    <a class="float-right text-dark header_link mx-2" href="">signup/login</a>
+</div>
+<div class="container-fluid d-none d-md-block" id="temp-bar">
+    <div class="hexagon d-none d-md-block"><span></span></div>
+    <img class="d-none d-md-block" id="logo" src="img/k_final.png">
+</div>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top mb-5">
+    <img class="d-block d-md-none" id="logo-after" src="../img/k_final.png">
+    <div class="hexagon-after d-block d-md-none"><span></span></div>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto text-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle bg-dark" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    SHOP
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Men</h4>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=male&designCatagory=2">t-shirts</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=1&sex=male&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item " href="../discover/index.html?topWear=2&sex=male&designCatagory=1">hoodies</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="dropdown-header ">For Women</h4>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=0&sex=female&designCatagory=1">t-shirts</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=1&sex=female&designCatagory=1">v-necks</a>
+                            <a class="dropdown-item "
+                               href="../discover/index.html?topWear=2&sex=female&designCatagory=1">hoodies</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider "></div>
+                    <a class="dropdown-item " href="../discover/index.html?topWear=0&sex=uni&designCatagory=1">Show for
+                        all</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../tshirt-costomize/index.html">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../about-us-2.0/index.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Collection By Stars</a>
+            </li>
+        </ul>
+        <form class="ml-auto ml-md-0" method="get" action="" id="searchbox5">
+            <input id="search52" name="q" type="text" size="40" placeholder="Search..."/>
+        </form>
+        <ul class="navbar-nav text-right">
+            <li class="nav-item ">
+                <!-- below userId will come from cookies-->
+                <a class="nav-link" href="../profile-viewer/index.html?userId=2"><i class="fas fa-user fa-lg"></i></a>
+            </li>
+            <li id="cart_icon_holder" class="nav-item ">
+                <a class="nav-link" href="../cart/index.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<a class="" href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<div class="container-fluid" id="product-area">
+    <div class="container" id="product-details">
+        <div class="row">
+            <div class="col-12 col-md-6 mt-5">
+                <div class="row">
+                    <div class="col-2 mt-3">
+                        <img class="card-img m-1 border-transparent" id="frontView" src="http://via.placeholder.com/500x800">
+                        <img class="card-img m-1 border-transparent" id="backView" src="http://via.placeholder.com/900x800">
+                        <img class="card-img m-1 border-transparent" id="rightView" src="http://via.placeholder.com/600x800">
+                        <img class="card-img m-1 border-transparent" id="leftView" src="http://via.placeholder.com/600x800">
+                    </div>
+                    <div class="col-10 mt-3" id="mainImgContainer">
+                        <img class="card-img m-1" id="mainImg" src="http://via.placeholder.com/600x700">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="text-secondary">Product Code: 001 | Design By - <a href=".">User1</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <h4> Design Name</h4>
+                <h6 class="text-secondary">Mens T-Shirt</h6>
+                <p>Rs. 300</p>
+                <p class="text-secondary">
+                    <small>Additional tax may apply; charged at checkout</small>
+                </p>
+                <h6>SELECT SIZE</h6>
+                <a class="m-0" href=".">
+                    <small>view size chart</small>
+                </a>
+                <div class="row">
+                    <div class="circleBase type1 m-1" onclick="setBackground($(this))">
+                        <h6 class="circleText">S</h6>
+                    </div>
+                    <div class="circleBase type1 m-1" onclick="setBackground($(this))">
+                        <h6 class="circleText">M</h6>
+                    </div>
+                    <div class="circleBase type1 m-1" onclick="setBackground($(this))">
+                        <h6 class="circleText">L</h6>
+                    </div>
+                    <div class="circleBase type1 m-1" onclick="setBackground($(this))">
+                        <h6 class="circleText">XL</h6>
+                    </div>
+                </div>
+                <button class="btn btn-dark"> ADD TO BAG</button>
+                <h6 class="border_top_light mt-3">Product Details</h6>
+                <p class="text-secondary">Navy blue and white striped T-shirt, has a round neck, long sleeves</p>
+                <h6 class="mt-3">Material Care</h6>
+                <p class="text-secondary">Cotton, Machine-wash</p>
+            </div>
+        </div>
+    </div>
+    <div class="container my-1 border_top_light" id="similar-products">
+        <h6 class="row my-4">SIMILAR PRODUCTS</h6>
+        <div class="row my-4 justify-content-center">
+            <a class="col-6 col-md-2 my-1" href=".">
+                <img class="card-img" src="http://via.placeholder.com/600x800">
+            </a>
+            <a class="col-6 col-md-2 my-1" href=".">
+                <img class="card-img" src="http://via.placeholder.com/600x800">
+            </a>
+            <a class="col-6 col-md-2 my-1" href=".">
+                <img class="card-img" src="http://via.placeholder.com/600x800">
+            </a>
+            <a class="col-6 col-md-2 my-1" href=".">
+                <img class="card-img" src="http://via.placeholder.com/600x800">
+            </a>
+            <a class="col-6 col-md-2 my-1" href=".">
+                <img class="card-img" src="http://via.placeholder.com/600x800">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-secondary border_top_light" id="footer">
+    <div class="row my-2 mx-md-3 text-center text-md-left">
+        <div class="col-12 col-sm-12 col-md-3 my-2 border_right_light">
+            <h5 class="text-dark">
+                Download App
+            </h5>
+            <a class="m-3 p-0 text-secondary" id="gplay_icon" href=".">
+                <i class="fab fa-google-play fa-3x"></i>
+            </a>
+            <h5 class="m-2 d-inline d-md-block">
+                200+ USERS
+            </h5>
+            <h5 class="m-2 d-inline d-md-block">
+                2000+ STYLES
+            </h5>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 my-2 text-center text-md-left">
+            <h5 class="text-dark d-none d-sm-none d-md-block">COMPANY NAME</h5>
+            <a class="text-secondary d-inline d-md-block m-2 " href=".">Help / Support</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">About Us</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">Careers</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">FAQ's</a>
+            <a class="text-secondary d-inline d-md-block m-2" href=".">Coupons</a>
+        </div>
+        <div class="col-3 my-2 d-none d-sm-none d-md-block">
+            <h5 class="text-dark">
+                OUR POLICIES
+            </h5>
+            <a class="text-secondary d-block my-2">Terms and Conditions</a>
+        </div>
+        <div class="col-3 d-none d-sm-none d-md-block my-2">
+            <h5 class="text-dark">OUR PROMISE TO YOU</h5>
+
+            <p><i class="fas fa-heart fa-3x"></i> Get 100% satisfied</p>
+        </div>
+    </div>
+    <div class="row border_top_light text-center my-2">
+        <h5 class="col-6 my-5 d-none d-md-inline">
+            <i class="fas fa-rupee-sign fa-3x"></i>
+            CASH ON DELIVERY
+        </h5>
+        <h5 class="col-6 my-5 d-none d-md-inline">
+            <i class="fas fa-truck fa-3x"></i>
+            FREE SHIPPING*
+        </h5>
+    </div>
+    <div class="container border_top_light my-2">
+        <div class="row my-2">
+            <div class=" col-12 col-md-4 text-center text-md-left">
+                <h6 class="h6 text-dark d-none d-md-block">SECURE SHOPPING</h6>
+                <i class="fas fa-lock fa-2x m-2"></i>
+            </div>
+            <div class="col-8 d-none d-md-block">
+                <h6 class="h6 text-dark">PAYMENT OPTIONS</h6>
+                <i class="far fa-credit-card fa-2x m-2"></i>
+                <i class="fas fa-credit-card fa-2x m-2"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center my-2 border_top_light">
+        <p class="text">
+            <small>
+                Copyright © 2018 Company Name. All Rights Reserved
+            </small>
+        </p>
+    </div>
+</div>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="code.js"></script>
+<script src="../navbar/scrollTop.js"></script>
+<script src="../navbar/navbar.js"></script>
+</body>
+</html>

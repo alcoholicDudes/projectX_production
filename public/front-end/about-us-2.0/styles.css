@@ -1,0 +1,156 @@
+body {
+    background-color: #F0F7F7;
+}
+
+#full_viewport_container {
+    position: relative;
+    height: 100vh;
+}
+
+.intro-images {
+    height: 300px;
+    width: 300px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#left_img {
+    transform: rotate(338deg);
+}
+
+#middle_img {
+    transform: translateY(-100px);
+}
+
+#right_img {
+    transform: rotate(22deg);
+}
+
+#company_name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.filler-images {
+    width: 500px;
+    margin: 10px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.dark-blue-color-section {
+    position: relative;
+    background-color: #dfeeee;
+}
+
+.dark-blue-color-section::before, .dark-blue-color-section::after {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+}
+
+.dark-blue-color-section::before {
+    background-color: #F0F7F7;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 0;
+}
+
+.dark-blue-color-section::after {
+    background-color: #dfeeee;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 100%;
+}
+
+.parallex {
+    padding: 40px 0;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.bcg {
+    background: url('../img/three_shirts.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 170%;
+    opacity: 0.7;
+}
+
+.content-wrapper {
+    margin: auto;
+    position: relative;
+    z-index: 4;
+}
+
+.flaunting-cards {
+    color: white;
+    display: inline-block;
+    height: 60%;
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.flaunting-cards:hover, .active {
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+.flaunting-cards > .material-icons {
+    font-size: 60px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.flaunting-cards:hover > .material-icons, .active > .material-icons {
+    border-color: black;
+}
+
+.flaunting-cards > h6 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.flaunting-cards > p {
+    font-size: 14px;
+    color: black;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.flaunting-cards:hover > p, .active > p {
+    transform: scale(1);
+}
+
+.align-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-prev:before, .slick-next:before {
+    color:black !important;
+}

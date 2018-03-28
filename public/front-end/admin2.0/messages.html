@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="messages.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class='title'>
+    <div class='title_inner'>
+        <h1>
+            Funky fresh inbox UI
+        </h1>
+        <h2>
+            Just messing around with some concepts for a UI... and this is what i ended up with! Pure css goodness!
+        </h2>
+    </div>
+</div>
+<div class='container'>
+    <div class='container_ui'>
+        <div class='container_ui__heading'>
+            <div class='header_icon'>
+                <h1 class="ml-3">Kelvish</h1>
+            </div>
+            <h1>
+                inbox
+            </h1>
+        </div>
+        <input id='message-1' type='checkbox'>
+        <label for='message-1' href='#move'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg'>
+                    <div class='color_bar one'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>
+                    User1
+                </h2>
+                <h3>subj: thanks, you are amazing</h3>
+                <h4>Your generous donation saved 3 million puppies...</h4>
+            </div>
+            <div class='container_ui__expand' id='close'>
+                <div class='heading'>
+                    <div class='heading_head'></div>
+                    <label for='message-1'>
+                        x
+                    </label>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>User1</h2>
+                            <h3>subj: thanks you are amazing</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est.</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-2' type='checkbox'>
+        <label for='message-2'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/boheme/128.jpg'>
+                    <div class='color_bar two'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>User2</h2>
+                <h3>subj: Your paper on molecular fusion</h3>
+                <h4>We are awarding you the nobel...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading two'>
+                    <div class='heading_head'>
+                        <label for='message-2'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/boheme/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>user2</h2>
+                            <h3>subj: Your paper on molecular</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-3' type='checkbox'>
+        <label for='message-3'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/alexmarin/128.jpg'>
+                    <div class='color_bar three'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>megan fox</h2>
+                <div class='dot active'></div>
+                <h3>subj: i miss you</h3>
+                <h4>Where have you been? I've been trying to call you...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading three'>
+                    <div class='heading_head'>
+                        <label for='message-3'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/alexmarin/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>megan fox</h2>
+                            <h3>subj: i miss you</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-4' type='checkbox'>
+        <label for='message-4'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'>
+                    <div class='color_bar four'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>Linkedin</h2>
+                <div class='dot active'></div>
+                <h3>subj: Message from bill gates</h3>
+                <h4>I want to add you to my personal network...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading four'>
+                    <div class='heading_head'>
+                        <label for='message-4'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>Linkedin</h2>
+                            <h3>Message from bill gates</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-5' type='checkbox'>
+        <label for='message-5'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg'>
+                    <div class='color_bar five'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>Jesse pinkman</h2>
+                <div class='dot'></div>
+                <h3>subj: Let's get together sometime yo!</h3>
+                <h4>Hey, how's it going? You free at all this weekend...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading five'>
+                    <div class='heading_head'>
+                        <label for='message-5'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>Jesse pinkman</h2>
+                            <h3>subj: Let's get together sometime yo!</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-6' type='checkbox'>
+        <label for='message-6'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg'>
+                    <div class='color_bar six'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>James cameron</h2>
+                <div class='dot active'></div>
+                <h3>subj: avatar 2</h3>
+                <h4>Please consider writing the script...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading six'>
+                    <div class='heading_head'>
+                        <label for='message-6'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>James cameron</h2>
+                            <h3>subj: avatar 2</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input id='message-7' type='checkbox'>
+        <label for='message-7'>
+            <div class='container_ui__item'>
+                <div class='face'>
+                    <img src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg'>
+                    <div class='color_bar six'>
+                        <p>Now Reading</p>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <h2>James cameron</h2>
+                <h3>subj: avatar 2</h3>
+                <h4>Please consider writing the script...</h4>
+            </div>
+            <div class='container_ui__expand'>
+                <div class='heading six'>
+                    <div class='heading_head'>
+                        <label for='message-7'>
+                            x
+                        </label>
+                    </div>
+                </div>
+                <div class='body'>
+                    <div class='user'>
+                        <div class='face'>
+                            <img src='https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg'>
+                        </div>
+                        <div class='details'>
+                            <h2>James cameron</h2>
+                            <h3>subj: avatar 2</h3>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <p><b>Email text</b></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+                            commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus
+                            ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer
+                            mollis convallis quam, vel dignissim ligula rutrum in.<br/><br/>Pellentesque ut purus porta,
+                            gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna. Aenean commodo leo
+                            eget felis rhoncus blandit. Nam sed odio sed augue lobortis rutrum non vel est..</p>
+                        <span>Reply:</span>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
